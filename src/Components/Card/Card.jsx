@@ -2,20 +2,16 @@ import React from "react";
 import './Card.scss';
 
 
-const Card = () => {
+const Card = ({image, name, tagline, abv}) => {
 
     return (
         <div className="beerCard">
-            <h3 className="beerCard__title">Beer Name</h3>
-            <p className="beerCard__info">Lorem ipsum elit. Accusantium, hic?</p>
-            <p className="beerCard__info">Lorem ipsum elit. Accusantium, hic?</p>
-            <p className="beerCard__info">Lorem ipsum elit. Accusantium, hic?</p>
+            <img className="beerCard__img"src={image} alt=""/>
+            <h3 className="beerCard__title">{name}</h3>
+            <p className="beerCard__abv">ABV {abv}%</p>
+            <p className="beerCard__tagline">{tagline}</p>
         </div>
-
-
-
     )
-
 }
 
 
