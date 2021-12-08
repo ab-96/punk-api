@@ -1,4 +1,5 @@
 const beers = [
+
     {
         "id": 1,
         "name": "Buzz",

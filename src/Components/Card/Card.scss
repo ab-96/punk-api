@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 450px;
+    height: 490px;
     border-radius: 10px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -23,6 +23,30 @@
 
     .beerCard__info {
       
+    }
+
+    .beerCard__abv {
+        font-weight: 600;
+        background-color: #90ddf0;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+    }
+
+    .moreInfo {
+        border-radius: 15px;
+        padding: 10px;
+        cursor: pointer;
+        width: 90%;
+        text-align: center;
+        background-color: #07393C;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+        &:hover {
+            background-color: #2c666e;
+        }
     }
 
     

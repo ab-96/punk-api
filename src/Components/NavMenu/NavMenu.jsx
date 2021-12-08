@@ -5,7 +5,7 @@ const NavMenu = () => {
     console.log("hey")
     return (
 
-        <div></div>
+        <div>red</div>
 
         
     )
