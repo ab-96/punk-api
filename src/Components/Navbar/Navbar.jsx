@@ -5,16 +5,9 @@ import "./Navbar.scss";
 import SearchBox from "../SearchBox/SearchBox";
 
 
-const Navbar = ({handleInput, searchTerm}) => {
-  // const [isOpen, setOpen] = useState(false);
-  // const [searchTerm, setSearchTerm] = useState("");
+const Navbar = ({handleInput, searchTerm} ) => {
 
-  // const handleInput = event => {
-  //   const cleanInput = event.target.value.toLowerCase();
-  //   setSearchTerm(cleanInput);
-  //   console.log(cleanInput)
-  // };
-
+  
 
   return (
     <div className="navbar">

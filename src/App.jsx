@@ -8,30 +8,36 @@ function App() {
    const [searchTerm, setSearchTerm] = useState("");
 
    useEffect(() => {
-       const URL = "https://api.punkapi.com/v2/beers?page=2&per_page=80";
+       const URL = "https://api.punkapi.com/v2/beers?page=1&per_page=80";
        fetch(URL).then(response => {
            return response.json();
        }).then(beerObject => {
-          console.log(beerObject)
            setShowData(beerObject);
        });
 
-   }, []);
+   }, [searchTerm]);
 
    const handleInput = event => {
-     const cleanInput = event.target.value.toLowerCase();
-     setSearchTerm(cleanInput);
-     console.log(cleanInput)
+     const inputValue = event.target.value.toLowerCase();
+     setSearchTerm(inputValue);
+     console.log(inputValue);
    };
 
+   const singleBeer = showData.filter(beer => {
+      const name = beer.name.toLowerCase();
+   
+      return name.includes(searchTerm)
+ 
+   })
 
+   console.log(singleBeer)
 
 
 
    return (
       <div className="app">
-         <Navbar handleInput={handleInput} searchTerm={searchTerm}/>
-         <Main showData={showData}/>
+         <Navbar handleInput={handleInput} searchTerm={searchTerm} showData={showData}/>
+         <Main showData={singleBeer}/>
       </div>
    )
 }
