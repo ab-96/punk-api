@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "../Card/Card";
 //import beers from "../../Data/beers";
 import './Main.scss';
@@ -13,8 +13,6 @@ const Main = ({showData}) => {
         <div className="main">
             {beersArr}
         </div>
-
-        
     )
 }
 

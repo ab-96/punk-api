@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./SearchBox.scss";
 
 const SearchBox = (props) => {
@@ -7,7 +7,7 @@ const SearchBox = (props) => {
 
     return (
         <div className="search">
-            <input className="search__box" type="text" placeholder="Search.." value={searchTerm} onInput={handleInput}></input>
+            <input className="search__box" type="text" placeholder="Search..." value={searchTerm} onInput={handleInput}></input>
        
         </div>
 

@@ -1,25 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Navbar.scss";
-// import Hamburger from 'hamburger-react'
-// import NavMenu from "../NavMenu/NavMenu";
 import SearchBox from "../SearchBox/SearchBox";
+import FilterList from "../FilterList/FilterList";
 
 
-const Navbar = ({handleInput, searchTerm} ) => {
 
-  
+const Navbar = ({ handleInput, searchTerm, showData, abvFilter }) => {
+
+
+
+
+
 
   return (
     <div className="navbar">
+      <div className="red">
+        <h1 className="navbar__title">Punk API</h1>
+        <SearchBox handleInput={handleInput} searchTerm={searchTerm} />
+        <FilterList showData={showData} abv="abvFilter"/>
 
-      <SearchBox handleInput={handleInput} searchTerm={searchTerm}/>
+      </div>
 
-      {/* <Hamburger className="hamburgerMenu" toggled={isOpen} toggle={setOpen} color="#FFFFFF"/>
-      {isOpen && <NavMenu/>}
-     */}
-      
-      
-    </div> 
+    </div>
 
   )
 }
