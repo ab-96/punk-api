@@ -6,10 +6,13 @@ const FilterList = ({showData, abvFilter}) => {
   const [checked, setChecked] = useState(false)
 
 
+  //event.target.checked -> for checked boxes to check if they clicked -> use if statementts 
+
+
   const toggleABV = () => {
 
     if (setChecked(!checked)) {
-      
+
     }
 
    
