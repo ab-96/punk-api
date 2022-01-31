@@ -1,12 +1,23 @@
 .main {
-    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    // background-color: #f2f4f3;
     background-color: #F0EDEE;
     padding: 20px;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+    .main {
+        margin-left: 100px;
+        justify-content: center;
+        padding-left: 150px;
+
+    }
+
 }

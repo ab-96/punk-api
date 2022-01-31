@@ -52,8 +52,6 @@ function App() {
       <div className="app">
          <Navbar handleInput={handleInput} searchTerm={searchTerm} showData={showData} abv={abvFilter} />
          <Main showData={singleBeer} />
-
-
       </div>
    )
 }

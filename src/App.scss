@@ -7,9 +7,19 @@
     // font-family: 'Pathway Gothic One', sans-serif;
 
 }
-.app {
 
+.app {
     display: flex;
-    // min-height: 100vh;
-    // width: 100vw;
+    flex-direction: column;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+    .app {
+        display: flex;
+        position: relative;
+    }
+
 }
